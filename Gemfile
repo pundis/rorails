@@ -22,7 +22,7 @@ end
 group :production do
    gem 'pg'
    gem 'rails_12factor'
-   gem 'bcrypt', '~> 2.0'
+   gem 'bcrypt', '~> 3.1.7'
 end
 
 # Use jquery as the JavaScript library
