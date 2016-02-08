@@ -10,3 +10,4 @@
   <% end %>
 </ul>
 
+<%= link_to 'new_rating', new_rating_path %>
