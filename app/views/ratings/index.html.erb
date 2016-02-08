@@ -1,20 +1,13 @@
-<p id="notice"><%= notice %></p>
+<h2>List of ratings</h2>
 
-<h1>List of ratings</h1>
+<p>
+  Number of ratings <%= @ratings.count %>
+</p>
 
-  <body>
-    <p>
-	Number of ratings: <%= @ratings.count %>
-    </p>
-    <ul>
-     <% @ratings.each do |rating| %>
-     <li> <%= rating %> <%= link_to rating.user.username, rating.user  %> </li>
-     <% end %>
-    </ul>
-    <p>
-  <p><b>
-    <%= link_to 'New rating', new_rating_path %>
+<ul>
+  <% @ratings.each do |rating| %>
+    <li> <%= rating %> <%= link_to rating.user.username, rating.user %></li>
+  <% end %>
+</ul>
 
-<br>
-
-
+<%= link_to 'new_rating', new_rating_path %>
