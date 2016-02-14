@@ -1,1 +1,3 @@
 https://rorails.herokuapp.com
+
+https://codeclimate.com/github/pundis/rorails/code
