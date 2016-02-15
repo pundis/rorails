@@ -2,39 +2,35 @@ require 'rails_helper'
 
 include Helpers
 
-describe "Beer pages" do
+describe "Beer" do
+  before :each do
+    FactoryGirl.create :brewery, name:"testbrew"
+  end
 
-	let!(:brewery){ FactoryGirl.create :brewery, name: "Koff" }
-	let!(:user){ FactoryGirl.create :user }
-	
-	before :each do
-		sign_in(username:'Pekka',password:'Foobar1')
-	end
+  describe "if a user logged in" do
+    before :each do
+      FactoryGirl.create :user
+      sign_in(username:"Pekka", password:"Foobar1")
+    end
 
-	it "can create a beer with valid data" do
-		visit new_beer_path
-		select('Koff', from: 'beer[brewery_id]')
-		select('Lager', from: 'beer[style]')
-		fill_in('beer[name]', with:"Uusi Olut")
+    it "a new beer is created if a valid name specified" do
+      visit new_beer_path
+      save_and_open_page
+      fill_in('beer_name', with:'CrapIPA')
+      select('Lager', from:'beer[style]')
+      expect{
+        click_button "Create Beer"
+      }.to change{Beer.count}.from(0).to(1)
+    end
 
-		expect{
-			click_button "Create Beer"
-		}.to change{Beer.count}.from(0).to(1)
+    it "is not created if name not valid" do
+      visit new_beer_path
+      click_button "Create Beer"
+      expect(Beer.count).to be(0)
+      expect(page).to have_content 'prohibited this beer from being saved'
+      expect(page).to have_content "Name can't be blank"
+    end
 
-		expect(page).to have_content "Uusi Olut"
-	end
+  end
 
-	it "doesn't create a beer with invalid data" do
-		visit new_beer_path
-		select('Koff', from: 'beer[brewery_id]')
-		select('Lager', from: 'beer[style]')
-		fill_in('beer[name]', with:"")
-
-		click_button "Create Beer"
-
-		
-		expect(Beer.count).to eq(0)
-		expect(page).not_to have_content "Uusi Olut"
-		expect(page).to have_content "Name can't be blank"
-	end
 end
