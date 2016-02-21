@@ -13,6 +13,9 @@ group :production do
    gem 'pg'
    gem 'rails_12factor'
 end
+
+gem 'httparty'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -49,6 +52,7 @@ group :test do
   gem 'factory_girl_rails'
   gem 'capybara'
   gem 'launchy'
+  gem 'webmock'
 end
 
 gem 'simplecov', require: false

@@ -1,5 +1,7 @@
 <p id="notice"><%= notice %></p>
 
+<%= @beer %>
+
 <p>
   <strong>Name:</strong>
   <%= @beer.name %>
