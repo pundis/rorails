@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/mluukkai/kurssirepot/ratebeer/app/models/rating.rb": [
+      "/home/fuksi/ratebeer/app/models/rating.rb": [
         1,
         1,
         null,
@@ -15,35 +15,35 @@
         null,
         null
       ],
-      "/Users/mluukkai/kurssirepot/ratebeer/app/helpers/application_helper.rb": [
+      "/home/fuksi/ratebeer/app/helpers/application_helper.rb": [
         1,
         null
       ],
-      "/Users/mluukkai/kurssirepot/ratebeer/app/helpers/beer_clubs_helper.rb": [
+      "/home/fuksi/ratebeer/app/helpers/beer_clubs_helper.rb": [
         1,
         null
       ],
-      "/Users/mluukkai/kurssirepot/ratebeer/app/helpers/beers_helper.rb": [
+      "/home/fuksi/ratebeer/app/helpers/beers_helper.rb": [
         1,
         null
       ],
-      "/Users/mluukkai/kurssirepot/ratebeer/app/helpers/breweries_helper.rb": [
+      "/home/fuksi/ratebeer/app/helpers/breweries_helper.rb": [
         1,
         null
       ],
-      "/Users/mluukkai/kurssirepot/ratebeer/app/helpers/memberships_helper.rb": [
+      "/home/fuksi/ratebeer/app/helpers/memberships_helper.rb": [
         1,
         null
       ],
-      "/Users/mluukkai/kurssirepot/ratebeer/app/helpers/styles_helper.rb": [
+      "/home/fuksi/ratebeer/app/helpers/styles_helper.rb": [
         1,
         null
       ],
-      "/Users/mluukkai/kurssirepot/ratebeer/app/helpers/users_helper.rb": [
+      "/home/fuksi/ratebeer/app/helpers/users_helper.rb": [
         1,
         null
       ],
-      "/Users/mluukkai/kurssirepot/ratebeer/app/models/beer.rb": [
+      "/home/fuksi/ratebeer/app/models/beer.rb": [
         1,
         1,
         null,
@@ -60,7 +60,7 @@
         null,
         null
       ],
-      "/Users/mluukkai/kurssirepot/ratebeer/app/models/concerns/rating_average.rb": [
+      "/home/fuksi/ratebeer/app/models/concerns/rating_average.rb": [
         1,
         1,
         null,
@@ -69,7 +69,7 @@
         null,
         null
       ],
-      "/Users/mluukkai/kurssirepot/ratebeer/app/models/brewery.rb": [
+      "/home/fuksi/ratebeer/app/models/brewery.rb": [
         1,
         1,
         null,
@@ -81,7 +81,7 @@
         null,
         null
       ],
-      "/Users/mluukkai/kurssirepot/ratebeer/app/models/user.rb": [
+      "/home/fuksi/ratebeer/app/models/user.rb": [
         1,
         1,
         null,
@@ -133,12 +133,12 @@
         null,
         null
       ],
-      "/Users/mluukkai/kurssirepot/ratebeer/app/models/style.rb": [
+      "/home/fuksi/ratebeer/app/models/style.rb": [
         1,
         1,
         null
       ],
-      "/Users/mluukkai/kurssirepot/ratebeer/app/controllers/sessions_controller.rb": [
+      "/home/fuksi/ratebeer/app/controllers/sessions_controller.rb": [
         1,
         1,
         null,
@@ -159,7 +159,7 @@
         null,
         null
       ],
-      "/Users/mluukkai/kurssirepot/ratebeer/app/controllers/application_controller.rb": [
+      "/home/fuksi/ratebeer/app/controllers/application_controller.rb": [
         1,
         null,
         null,
@@ -177,7 +177,7 @@
         null,
         null
       ],
-      "/Users/mluukkai/kurssirepot/ratebeer/app/controllers/users_controller.rb": [
+      "/home/fuksi/ratebeer/app/controllers/users_controller.rb": [
         1,
         1,
         null,
@@ -256,19 +256,19 @@
         null,
         null
       ],
-      "/Users/mluukkai/kurssirepot/ratebeer/app/models/membership.rb": [
+      "/home/fuksi/ratebeer/app/models/membership.rb": [
         1,
         1,
         1,
         null
       ],
-      "/Users/mluukkai/kurssirepot/ratebeer/app/models/beer_club.rb": [
+      "/home/fuksi/ratebeer/app/models/beer_club.rb": [
         1,
         1,
         1,
         null
       ],
-      "/Users/mluukkai/kurssirepot/ratebeer/app/controllers/beers_controller.rb": [
+      "/home/fuksi/ratebeer/app/controllers/beers_controller.rb": [
         1,
         1,
         1,
@@ -353,7 +353,7 @@
         null,
         null
       ],
-      "/Users/mluukkai/kurssirepot/ratebeer/app/controllers/breweries_controller.rb": [
+      "/home/fuksi/ratebeer/app/controllers/breweries_controller.rb": [
         1,
         1,
         1,
@@ -430,7 +430,7 @@
         null,
         null
       ],
-      "/Users/mluukkai/kurssirepot/ratebeer/lib/beermapping_api.rb": [
+      "/home/fuksi/ratebeer/lib/beermapping_api.rb": [
         1,
         1,
         5,
@@ -445,6 +445,7 @@
         1,
         null,
         1,
+        null,
         4,
         null,
         4,
@@ -453,18 +454,16 @@
         4,
         null,
         3,
-        3,
-        5,
-        null,
+        8,
         null,
         null,
         1,
-        4,
-        4,
+        0,
+        0,
         null,
         null
       ],
-      "/Users/mluukkai/kurssirepot/ratebeer/app/models/place.rb": [
+      "/home/fuksi/ratebeer/app/models/place.rb": [
         1,
         1,
         null,
@@ -480,7 +479,7 @@
         null,
         null
       ],
-      "/Users/mluukkai/kurssirepot/ratebeer/app/controllers/places_controller.rb": [
+      "/home/fuksi/ratebeer/app/controllers/places_controller.rb": [
         1,
         1,
         null,
@@ -500,7 +499,7 @@
         null,
         null
       ],
-      "/Users/mluukkai/kurssirepot/ratebeer/app/controllers/ratings_controller.rb": [
+      "/home/fuksi/ratebeer/app/controllers/ratings_controller.rb": [
         1,
         1,
         1,
@@ -530,14 +529,7 @@
         null,
         null
       ],
-      "/Users/mluukkai/kurssirepot/ratebeer/app/controllers/beer_clubs_controller.rb": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
+      "/home/fuksi/ratebeer/app/controllers/memberships_controller.rb": [
         0,
         0,
         0,
@@ -613,7 +605,7 @@
         0,
         0
       ],
-      "/Users/mluukkai/kurssirepot/ratebeer/app/controllers/memberships_controller.rb": [
+      "/home/fuksi/ratebeer/app/controllers/styles_controller.rb": [
         0,
         0,
         0,
@@ -689,7 +681,14 @@
         0,
         0
       ],
-      "/Users/mluukkai/kurssirepot/ratebeer/app/controllers/styles_controller.rb": [
+      "/home/fuksi/ratebeer/app/controllers/beer_clubs_controller.rb": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
         0,
         0,
         0,
@@ -766,6 +765,6 @@
         0
       ]
     },
-    "timestamp": 1455031395
+    "timestamp": 1456665328
   }
 }

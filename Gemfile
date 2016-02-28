@@ -65,6 +65,11 @@ group :development do
   gem 'spring'
 end
 
+gem 'bootstrap-sass'
+group :development do
+  gem 'rails_layout'
+end
+
 group :development, :test do
   gem 'rspec-rails', '~> 3.0'
 end
