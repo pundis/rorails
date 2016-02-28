@@ -12,4 +12,10 @@ class Beer < ActiveRecord::Base
   def to_s
     "#{name} #{brewery.name}"
   end
+
+  def self.top(n)
+    n = n-1
+    Beer.limit(n+1).sort_by { |b| -(b.average_rating||0) }[0..n]
+  end
+
 end

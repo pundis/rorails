@@ -47,4 +47,10 @@ class User < ActiveRecord::Base
     ratings_of = ratings.select{ |r| r.beer.brewery==brewery }
     ratings_of.map(&:score).inject(&:+) / ratings_of.count.to_f
   end
+
+  def self.top(n)
+    n = n-1
+    User.all.sort_by { |b| (b.ratings.count||0) }[0..n]
+  end
+
 end

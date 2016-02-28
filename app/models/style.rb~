@@ -1,0 +1,10 @@
+class Style < ActiveRecord::Base
+  include RatingAverage
+
+  has_many :beers
+
+  def self.top(n)
+    #how
+    Style.limit(3) [0..3]
+  end
+end

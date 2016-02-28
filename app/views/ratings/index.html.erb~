@@ -1,0 +1,29 @@
+<h2>Ratings</h2>
+
+<p> Number of ratings <%= @ratings.count %> </p>
+
+<div>
+  <h2>Best breweries</h2>
+  <%= render 'list', source: @top_breweries %>
+</div>
+
+<div>
+  <h2>Best beers</h2>
+  <%= render 'list', source: @top_beers %>
+</div>
+
+<div>
+  <h2>Top raters</h2>
+  <ul>
+    <% @top_users.each do |user| %>
+      <li> <%= user.username %> : <%= user.ratings.count %> <%= link_to user.username, user %> </li>
+    <% end %>
+  </ul>
+</div>
+
+<h2>Recent ratings</h2>
+<ul>
+  <% @recent.each do |rating| %>
+      <li> <%= rating %> <%= link_to rating.user.username, rating.user %> </li>
+  <% end %>
+</ul>

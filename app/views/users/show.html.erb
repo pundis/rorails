@@ -8,6 +8,7 @@
   Has made <%= pluralize(@user.ratings.count, 'rating') %>
 </p>
 
+
 <% if @user.ratings.any? %>
   <p>Favorite style <%= @user.favorite_style.name %></p>
 
@@ -36,7 +37,9 @@
   <% end %>
 </ul>
 
+<br>
+
 <% if @user == current_user %>
-  <%= link_to 'Delete account', @user, method: :delete, data: { confirm: 'Are you sure?' } %>
-  <%= link_to 'Edit', edit_user_path(@user) %>
+  <%= link_to 'Delete account', @user, method: :delete, data: { confirm: 'Are you sure?' }, class:'btn btn-danger' %>
+  <%= link_to 'Edit', edit_user_path(@user), class:'btn btn-primary' %>
 <% end %>
