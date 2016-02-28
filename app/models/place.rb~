@@ -9,6 +9,6 @@ class Place
 
   def map_url
     return blogmap gsub("http", "https") if Rails.env.production?
-    blogmap
-  end
+      blogmap
+    end
 end
