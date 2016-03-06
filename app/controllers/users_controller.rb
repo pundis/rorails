@@ -64,6 +64,15 @@ class UsersController < ApplicationController
     end
   end
 
+  def toggle_lock
+    user = User.find(params[:id])
+    user.update_attribute :locked, (not user.locked)
+
+    new_status = user.locked? ? "unlocked" : "locked"
+
+    redirect_to :back, notice:"user account #{new_status}"
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_user
