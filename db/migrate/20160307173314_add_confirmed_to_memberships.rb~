@@ -1,0 +1,4 @@
+class AddConfirmedToMemberships < ActiveRecord::Migration
+  def change
+  end
+end
